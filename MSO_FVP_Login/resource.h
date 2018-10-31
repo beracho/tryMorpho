@@ -1,0 +1,126 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++ generated include file.
+// Used by MSO_FVP_Login.rc
+//
+#define IDS_RIGHT_THUMB                 1
+#define IDS_RIGHT_INDEX                 2
+#define IDS_RIGHT_MIDDLE                3
+#define IDS_RIGHT_RING                  4
+#define IDS_RIGHT_LITTLE                5
+#define IDS_LEFT_THUMB                  6
+#define IDS_LEFT_INDEX                  7
+#define IDS_LEFT_MIDDLE                 8
+#define IDS_LEFT_RING                   9
+#define IDS_LEFT_LITTLE                 10
+#define IDS_MORPHO_MOVE_NO_FINGER       11
+#define IDS_MORPHO_MOVE_FINGER_UP       12
+#define IDS_MORPHO_MOVE_FINGER_DOWN     13
+#define IDS_MORPHO_MOVE_FINGER_LEFT     14
+#define IDS_MORPHO_MOVE_FINGER_RIGHT    15
+#define IDM_ABOUTBOX                    0x0010
+#define IDS_MORPHO_LATENT               17
+#define IDS_MORPHO_REMOVE_FINGER        18
+#define IDS_MORPHO_FINGER_OK            19
+#define IDS_ENROLL_FINGER               20
+#define IDS_ENROLL_CAPTURE              21
+#define IDS_ENROLL_ERROR                22
+#define IDS_ENROLL_OK                   23
+#define IDS_VERIFY_ERROR                24
+#define IDS_VERIFY_OK                   25
+#define IDS_MORPHO_PRESS_FINGER_HARDER  26
+#define IDD_ABOUTBOX                    100
+#define IDS_ABOUTBOX                    101
+#define IDD_MSO_FVP_Login_DIALOG        102
+#define IDR_HTML_SECURITYLEVELDLG       103
+#define IDR_HTML_SECURITYLVLDLG         104
+#define IDD_PROPPAGE_MEDIUM             106
+#define IDD_SECURITY_LEVEL_DIALOG       106
+#define IDR_MAINFRAME                   128
+#define IDI_ICON_OK                     132
+#define IDD_CONNECTION                  133
+#define IDI_ICON_NONE                   134
+#define IDD_RESULT_DIALOG               135
+#define IDB_BITMAP_LOGO_MORPHOSMART     136
+#define IDB_CLOSE_BMP1                  140
+#define IDB_CLOSE_BMP                   140
+#define IDB_ENROLL_BMP                  141
+#define IDB_ERDB_BMP                    142
+#define IDB_BITMAP4                     143
+#define IDB_NEWUSER_BMP                 143
+#define IDB_SAGEM                       144
+#define IDB_SecLvl                      145
+#define IDB_BITMAP_KO                   148
+#define IDB_BITMAP_OK                   149
+#define IDB_DISABLED_CLOSE              150
+#define IDB_DESABLED_ERDB               151
+#define IDB_DISABLED_NEWUSER            152
+#define IDB_DESABLED_SCLEVEL            153
+#define IDB_STOP_ENROLL_BMP             155
+#define IDB_BITMAP1                     156
+#define IDB_IDENTIFY_MODE_BMP           156
+#define IDB_EMPT                        157
+#define IDB_EMPTY_BMP                   157
+#define IDB_CONFIG                      158
+#define IDB_CONFIG_BMP                  158
+#define IDC_SMALL                       1000
+#define IDC_LARGE                       1001
+#define IDC_EDIT_NAME                   1003
+#define IDC_BUTTON_EXPAND               1004
+#define IDC_STATIC_MSG1                 1005
+#define IDC_BUTTON_ENROLL               1006
+#define IDC_STATIC_VIEWER               1007
+#define IDC_BUTTON_CLOSE                1008
+#define IDC_STATIC_COMMAND_MSG          1009
+#define IDC_STATIC_CAPTURE_MSG1         1010
+#define IDC_STATIC_CAPTURE_MSG2         1011
+#define IDC_STATIC_CAPTURE_MSG3         1012
+#define IDC_STATIC_CAPTURE_ICON1        1013
+#define IDC_STATIC_CAPTURE_ICON2        1014
+#define IDC_STATIC_CAPTURE_ICON3        1015
+#define IDC_STATIC_MINI_VIEWER1         1016
+#define IDC_STATIC_MINI_VIEWER2         1017
+#define IDC_STATIC_MINI_VIEWER3         1018
+#define IDC_STATIC_COMMAND_MSG2         1019
+#define IDC_RADIO_RS232                 1020
+#define IDC_RADIO_USB                   1021
+#define IDC_PORT_COM                    1022
+#define IDC_BAUD_RATE                   1023
+#define IDC_STATIC_COM                  1024
+#define IDC_STATIC_BAUD                 1025
+#define IDC_PRODUCT_DESC                1026
+#define IDC_SENSOR_DESC                 1027
+#define IDC_SERIAL_NAME                 1027
+#define IDC_SOFTWARE_DESC               1028
+#define IDC_STATIC_MAIN_MSG             1028
+#define IDC_STATIC_DETAILED_MSG         1029
+#define IDC_STATIC_SERIALNAME           1029
+#define IDC_STATIC_ICON                 1030
+#define IDC_STATIC_COUNTER              1031
+#define IDC_BUTTON_ERASE_BASE           1032
+#define IDC_STATIC_DETAILED_MSG2        1032
+#define IDC_STATIC_QUALITYSCORE_MSG     1032
+#define IDC_BITMAP_LOGO_SAGEM           1035
+#define IDC_LOGO                        1038
+#define IDC_PROGRESS1                   1039
+#define IDC_QUALITE_PROGRESS            1039
+#define IDC_CLOSE_BTN                   1040
+#define IDC_ERDB_BTN                    1041
+#define IDC_NEWUSER_BTN                 1042
+#define IDC_ENROLL_BTN                  1043
+#define IDC_STATIC_KHOUKHOU             1044
+#define IDC_SECLVL_BTN                  1045
+#define IDC_EDIT1                       1047
+#define IDC_BUTTON1                     1048
+#define IDC_BUTTON2                     1049
+#define IDC_COMBO_SECURITY_LEVEL        1051
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        159
+#define _APS_NEXT_COMMAND_VALUE         32771
+#define _APS_NEXT_CONTROL_VALUE         1052
+#define _APS_NEXT_SYMED_VALUE           105
+#endif
+#endif

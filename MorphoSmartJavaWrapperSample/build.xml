@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project
+	name="Create Runnable JAR for Project MSO_Demo_Java (MorphoSmartJavaWrapperSample)"
+	default="Build"
+	basedir="." >
+    
+	<!-- variables -->
+	<property name="src.dir"				value="src" />
+	<property name="res.dir"				value="res" />
+	<property name="build.dir"				value="${basedir}/bin" />
+	<property name="lib.jar"				value="${basedir}/../../jar" />
+	<property name="mso.demo.jar"			value="${basedir}/../bin/Exe/Win32/Release/MorphoSmartJavaWrapperSample.jar" />
+	<property name="msosecu.jar"			value="${lib.jar}/msosecu-6.20.1.0.jar" />
+	<property name="morphosmart-sdk.jar"	value="${lib.jar}/morphosmart-sdk-6.20.1.0.jar" />
+	<property name="mso.pipe.jar"	value="${lib.jar}/MsoPipeLib.jar" />
+	
+	<!-- build -->
+    <target name="Build" depends="Compile">
+        <jar destfile="${mso.demo.jar}"
+        	filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="morpho.morphosmart.sdk.demo.MsoConnection"/>
+                <attribute name="Class-Path" value="." />
+            </manifest>
+        	<fileset dir="${res.dir}" />
+            <fileset dir="${basedir}/bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="${morphosmart-sdk.jar}"/>
+            <zipfileset excludes="META-INF/*.SF" src="${msosecu.jar}"/>
+            <zipfileset excludes="META-INF/*.SF" src="${mso.pipe.jar}"/>
+        </jar>
+    </target>
+	
+	<!-- clean -->
+	<target name="Clean">
+		 <delete dir="${build.dir}"/>
+	</target>
+	
+	<!-- set path of external jars -->
+	<path id="external.classpath">
+	    <pathelement location="${morphosmart-sdk.jar}"/>
+		<pathelement location="${msosecu.jar}"/>
+		<pathelement location="${mso.pipe.jar}"/>
+	</path>
+	<!-- compile -->
+	<target name="Compile">
+		<mkdir dir="${build.dir}"/>
+		<javac includeantruntime="false" srcdir="${src.dir}" destdir="${build.dir}">
+			<classpath>
+				<path refid="external.classpath" />
+			</classpath>
+		</javac>
+		<copy todir="${basedir}/../bin/Exe/x64/Release/">
+			<fileset dir="${basedir}/../bin/Exe/Win32/Release/">
+				<include name="*.jar"/>     
+			</fileset>
+		</copy>
+		<copy todir="${basedir}/../bin/Exe/Win32/Release/">
+			<fileset dir="${basedir}/../../dll/Win32/">
+				<include name="*.dll"/>     
+			</fileset>
+		</copy>
+		<copy todir="${basedir}/../bin/Exe/x64/Release/">
+			<fileset dir="${basedir}/../../dll/x64/">
+				<include name="*.dll"/>     
+			</fileset>
+		</copy>
+	</target>
+	
+</project>

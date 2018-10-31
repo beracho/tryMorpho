@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project
+	name="Create Runnable JAR for Project MSO_Demo_Java Applet"
+	default="Build"
+	basedir="." >
+    
+	<!-- variables -->
+	<property name="src.dir"				value="src" />
+	<property name="res.dir"				value="res" />
+	<property name="build.dir"				value="${basedir}/bin" />
+	<property name="lib.jar"				value="${basedir}/../../jar" />
+	<property name="mso.demo.jar"			value="${basedir}/../bin/Exe/Win32/Release/MorphoSmartJavaWrapperSampleApplet.jar" />
+	<property name="msosecu.jar"			value="${lib.jar}/msosecu-6.20.1.0.jar" />
+	<property name="morphosmart-sdk.jar"	value="${lib.jar}/morphosmart-sdk-6.20.1.0.jar" />
+	
+	<!-- build -->
+    <target name="Build" depends="Clean, Compile">
+        <jar destfile="${mso.demo.jar}"
+        	filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="morpho.morphosmart.sdk.applet.demo.MsoDemo"/>
+                <attribute name="Class-Path" value="." />
+            </manifest>
+            <fileset dir="${res.dir}" />
+            <fileset dir="${basedir}/bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="${morphosmart-sdk.jar}"/>
+            <zipfileset excludes="META-INF/*.SF" src="${msosecu.jar}"/>
+        </jar>
+        
+        <!-- sign-jar -->
+        <signjar
+		    alias="MorphoSmart" keystore="keystore.jks"
+		    storepass="MorphoSmart">
+		  <path>
+		    <fileset dir="${basedir}/../bin/Exe/Win32/Release" includes="**/MorphoSmartJavaWrapperSampleApplet.jar" />
+		  </path>
+		</signjar>
+		
+        <copy todir="${basedir}/../bin/Exe/x64/Release/">
+			<fileset dir="${basedir}/../bin/Exe/Win32/Release">
+				<include name="MorphoSmartJavaWrapperSampleApplet.jar"/>     
+			</fileset>
+		</copy>
+		
+    </target>
+	
+	<!-- clean -->
+	<target name="Clean">
+		 <delete dir="${build.dir}"/>
+	</target>
+	
+	<!-- set path of external jars -->
+	<path id="external.classpath">
+	    <pathelement location="${morphosmart-sdk.jar}"/>
+		<pathelement location="${msosecu.jar}"/>
+	</path>
+	<!-- compile -->
+	<target name="Compile">
+		<mkdir dir="${build.dir}"/>
+		<javac includeantruntime="false" srcdir="${src.dir}" destdir="${build.dir}">
+			<classpath>
+				<path refid="external.classpath" />
+			</classpath>
+		</javac>		
+		<copy todir="${basedir}/../bin/Exe/Win32/Release">
+			<fileset dir="${basedir}">
+				<include name="MorphoSmartJavaSampleApplet.html"/>     
+			</fileset>
+		</copy>
+		<copy todir="${basedir}/../bin/Exe/x64/Release">
+			<fileset dir="${basedir}">
+				<include name="MorphoSmartJavaSampleApplet.html"/>     
+			</fileset>
+		</copy>
+	</target>
+	
+</project>

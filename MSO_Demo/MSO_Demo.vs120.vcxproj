@@ -1,0 +1,497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{599A70DC-613E-4C25-A995-EC88C9479581}</ProjectGuid>
+    <RootNamespace>MSO_Demo</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>MSO_Demo</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\bin\exe\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>.\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\bin\exe\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>.\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\bin\exe\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>.\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\bin\exe\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>.\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Command />
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\..\Bin\Exe\$(Platform)\$(Configuration)/MSO_Demo.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\inc;..\Common files;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NO_TYPES_REDEFINITION;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc80.pdb</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <BrowseInformationFile>$(IntDir)</BrowseInformationFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x040c</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Winscard.lib;MORPHO_SDK.lib;MSOSECU.lib;Version.lib;ImageCompress.lib;Delayimp.lib;Ws2_32.lib;strmiids.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\bin\exe\$(Platform)\$(Configuration)\$(ProjectName).exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\lib\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>ImageCompress.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(IntDir)$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Message>Copying dependencies...</Message>
+      <Command>if not exist "..\bin\exe\$(Platform)\$(Configuration)\Media" mkdir "..\bin\exe\$(Platform)\$(Configuration)\Media" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\Media\_capture.avi" xcopy /y ".\Media\_capture.avi" "..\bin\exe\$(Platform)\$(Configuration)\Media" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\Media\_maillage.avi" xcopy /y ".\Media\_maillage.avi" "..\bin\exe\$(Platform)\$(Configuration)\Media" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\ImageCompress.dll" xcopy /y "..\..\dll\$(Platform)\ImageCompress.dll" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\MORPHO_SDK.dll" xcopy /y "..\..\dll\$(Platform)\MORPHO_SDK.dll" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\MSO100.dll" xcopy /y "..\..\dll\$(Platform)\MSO100.dll" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\MorphoGLog.dll" xcopy /y "..\..\dll\$(Platform)\MorphoGLog.dll" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\MSO_Sprs232.dll" xcopy /y "..\..\dll\$(Platform)\MSO_Sprs232.dll" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\MSO_SpUsb.dll" xcopy /y "..\..\dll\$(Platform)\MSO_SpUsb.dll" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\MSOSECU.dll" xcopy /y "..\..\dll\$(Platform)\MSOSECU.dll" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\MsoSecu.ini" xcopy /y "..\..\..\demos\$(Platform)\MsoSecu.ini" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PreBuildEvent>
+      <Command />
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\..\..\Bin\Exe\$(Platform)\$(Configuration)/MSO_Demo.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\inc;..\Common files;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NO_TYPES_REDEFINITION;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc80.pdb</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <BrowseInformationFile>$(IntDir)</BrowseInformationFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x040c</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Winscard.lib;MORPHO_SDK.lib;MSOSECU.lib;Version.lib;ImageCompress.lib;Delayimp.lib;Ws2_32.lib;strmiids.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\bin\exe\$(Platform)\$(Configuration)\$(ProjectName).exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\lib\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>ImageCompress.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(IntDir)$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Message>Copying dependencies...</Message>
+      <Command>if not exist "..\bin\exe\$(Platform)\$(Configuration)\Media" mkdir "..\bin\exe\$(Platform)\$(Configuration)\Media" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\Media\_capture.avi" xcopy /y ".\Media\_capture.avi" "..\bin\exe\$(Platform)\$(Configuration)\Media" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\Media\_maillage.avi" xcopy /y ".\Media\_maillage.avi" "..\bin\exe\$(Platform)\$(Configuration)\Media" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\ImageCompress.dll" xcopy /y "..\..\dll\$(Platform)\ImageCompress.dll" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\MORPHO_SDK.dll" xcopy /y "..\..\dll\$(Platform)\MORPHO_SDK.dll" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\MSO100.dll" xcopy /y "..\..\dll\$(Platform)\MSO100.dll" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\MorphoGLog.dll" xcopy /y "..\..\dll\$(Platform)\MorphoGLog.dll" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\MSO_Sprs232.dll" xcopy /y "..\..\dll\$(Platform)\MSO_Sprs232.dll" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\MSO_SpUsb.dll" xcopy /y "..\..\dll\$(Platform)\MSO_SpUsb.dll" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\MSOSECU.dll" xcopy /y "..\..\dll\$(Platform)\MSOSECU.dll" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\MsoSecu.ini" xcopy /y "..\..\..\demos\$(Platform)\MsoSecu.ini" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Command />
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\..\Bin\Exe\$(Platform)\$(Configuration)/MSO_Demo.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\inc;..\Common files;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NO_TYPES_REDEFINITION;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc80.pdb</ProgramDataBaseFileName>
+      <BrowseInformation />
+      <BrowseInformationFile />
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x040c</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Winscard.lib;MORPHO_SDK.lib;MSOSECU.lib;Version.lib;ImageCompress.lib;Delayimp.lib;Ws2_32.lib;strmiids.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\bin\exe\$(Platform)\$(Configuration)\$(ProjectName).exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\lib\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>ImageCompress.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(IntDir)$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Message>Copying dependencies...</Message>
+      <Command>if not exist "..\bin\exe\$(Platform)\$(Configuration)\Media" mkdir "..\bin\exe\$(Platform)\$(Configuration)\Media" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\Media\_capture.avi" xcopy /y ".\Media\_capture.avi" "..\bin\exe\$(Platform)\$(Configuration)\Media" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\Media\_maillage.avi" xcopy /y ".\Media\_maillage.avi" "..\bin\exe\$(Platform)\$(Configuration)\Media" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\ImageCompress.dll" xcopy /y "..\..\dll\$(Platform)\ImageCompress.dll" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\MORPHO_SDK.dll" xcopy /y "..\..\dll\$(Platform)\MORPHO_SDK.dll" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\MSO100.dll" xcopy /y "..\..\dll\$(Platform)\MSO100.dll" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\MorphoGLog.dll" xcopy /y "..\..\dll\$(Platform)\MorphoGLog.dll" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\MSO_Sprs232.dll" xcopy /y "..\..\dll\$(Platform)\MSO_Sprs232.dll" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\MSO_SpUsb.dll" xcopy /y "..\..\dll\$(Platform)\MSO_SpUsb.dll" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\MSOSECU.dll" xcopy /y "..\..\dll\$(Platform)\MSOSECU.dll" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\MsoSecu.ini" xcopy /y "..\..\..\demos\$(Platform)\MsoSecu.ini" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PreBuildEvent>
+      <Command />
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\..\..\Bin\Exe\$(Platform)\$(Configuration)/MSO_Demo.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\inc;..\Common files;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NO_TYPES_REDEFINITION;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc80.pdb</ProgramDataBaseFileName>
+      <BrowseInformation />
+      <BrowseInformationFile />
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x040c</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Winscard.lib;MORPHO_SDK.lib;MSOSECU.lib;Version.lib;ImageCompress.lib;Delayimp.lib;Ws2_32.lib;strmiids.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\bin\exe\$(Platform)\$(Configuration)\$(ProjectName).exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\lib\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>ImageCompress.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(IntDir)$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Message>Copying dependencies...</Message>
+      <Command>if not exist "..\bin\exe\$(Platform)\$(Configuration)\Media" mkdir "..\bin\exe\$(Platform)\$(Configuration)\Media" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\Media\_capture.avi" xcopy /y ".\Media\_capture.avi" "..\bin\exe\$(Platform)\$(Configuration)\Media" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\Media\_maillage.avi" xcopy /y ".\Media\_maillage.avi" "..\bin\exe\$(Platform)\$(Configuration)\Media" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\ImageCompress.dll" xcopy /y "..\..\dll\$(Platform)\ImageCompress.dll" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\MORPHO_SDK.dll" xcopy /y "..\..\dll\$(Platform)\MORPHO_SDK.dll" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\MSO100.dll" xcopy /y "..\..\dll\$(Platform)\MSO100.dll" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\MorphoGLog.dll" xcopy /y "..\..\dll\$(Platform)\MorphoGLog.dll" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\MSO_Sprs232.dll" xcopy /y "..\..\dll\$(Platform)\MSO_Sprs232.dll" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\MSO_SpUsb.dll" xcopy /y "..\..\dll\$(Platform)\MSO_SpUsb.dll" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\MSOSECU.dll" xcopy /y "..\..\dll\$(Platform)\MSOSECU.dll" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+if not exist "..\bin\exe\$(Platform)\$(Configuration)\MsoSecu.ini" xcopy /y "..\..\..\demos\$(Platform)\MsoSecu.ini" "..\bin\exe\$(Platform)\$(Configuration)\" &gt; nul
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BioOperationPSheet.cpp" />
+    <ClCompile Include="ConnectDlg.cpp" />
+    <ClCompile Include="ConvertRawtoBmp.cpp" />
+    <ClCompile Include="ConvertSDKError.cpp" />
+    <ClCompile Include="DBaseCreateOption.cpp" />
+    <ClCompile Include="DisplayImageDlg.cpp" />
+    <ClCompile Include="DisplayMSOConfDlg.cpp" />
+    <ClCompile Include="DiversificationData.cpp" />
+    <ClCompile Include="DrawTitle.cpp" />
+    <ClCompile Include="FingerPrintCtrl.cpp" />
+    <ClCompile Include="GB_BioDemoCard.cpp" />
+    <ClCompile Include="GetInfoDlg.cpp" />
+    <ClCompile Include="GUIMediaVideo.cpp" />
+    <ClCompile Include="ISO19794_FIR_InfoDlg.cpp" />
+    <ClCompile Include="..\Common files\MORPHO_Image.cpp" />
+    <ClCompile Include="MSO_Demo.cpp" />
+    <ClCompile Include="MSO_DemoDlg.cpp" />
+    <ClCompile Include="Pipe_Tcp.cpp" />
+    <ClCompile Include="PPageCode.cpp" />
+    <ClCompile Include="PPageEnroll.cpp" />
+    <ClCompile Include="PPageGetImage.cpp" />
+    <ClCompile Include="PPageIdentify.cpp" />
+    <ClCompile Include="PPageMoc.cpp" />
+    <ClCompile Include="PPageProcess.cpp" />
+    <ClCompile Include="PPageVerify.cpp" />
+    <ClCompile Include="ProgressInit.cpp" />
+    <ClCompile Include="ResultDlg.cpp" />
+    <ClCompile Include="SagemBioDemoCard.cpp" />
+    <ClCompile Include="SCardReader.cpp" />
+    <ClCompile Include="SmartcardYpsID.cpp" />
+    <ClCompile Include="Sp_ClientPipe.cpp" />
+    <ClCompile Include="Sp_Pipe_Functions.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TabBioSettings.cpp" />
+    <ClCompile Include="TabCtrl.cpp" />
+    <ClCompile Include="TabDbInfo.cpp" />
+    <ClCompile Include="TabOptions.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MSO_Demo.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BioOperationPSheet.h" />
+    <ClInclude Include="ConnectDlg.h" />
+    <ClInclude Include="ConvertRawToBmp.h" />
+    <ClInclude Include="..\MSO_Login\ConvertSDKError.h" />
+    <ClInclude Include="DBaseCreateOption.h" />
+    <ClInclude Include="DisplayMSOConfDlg.h" />
+    <ClInclude Include="DiversificationData.h" />
+    <ClInclude Include="DrawTitle.h" />
+    <ClInclude Include="FingerPrintCtrl.h" />
+    <ClInclude Include="GB_BioDemoCard.h" />
+    <ClInclude Include="GetInfoDlg.h" />
+    <ClInclude Include="GUIMediaVideo.h" />
+    <ClInclude Include="ISO19794_FIR_InfoDlg.h" />
+    <ClInclude Include="..\Common files\MORPHO_Image.h" />
+    <ClInclude Include="MSO_Demo.h" />
+    <ClInclude Include="MSO_DemoDlg.h" />
+    <ClInclude Include="Pipe_Tcp.h" />
+    <ClInclude Include="PPageCode.h" />
+    <ClInclude Include="PPageEnroll.h" />
+    <ClInclude Include="PPageGetImage.h" />
+    <ClInclude Include="PPageIdentify.h" />
+    <ClInclude Include="PPageMoc.h" />
+    <ClInclude Include="PPageProcess.h" />
+    <ClInclude Include="PPageVerify.h" />
+    <ClInclude Include="ProgressInit.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ResultDlg.h" />
+    <ClInclude Include="SagemBioDemoCard.h" />
+    <ClInclude Include="SCardReader.h" />
+    <ClInclude Include="Smartcard.h" />
+    <ClInclude Include="Smartcard_Error.h" />
+    <ClInclude Include="SmartcardYpsID.h" />
+    <ClInclude Include="Sp_ClientPipe.h" />
+    <ClInclude Include="Sp_Pipe_Functions.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="TabBioSettings.h" />
+    <ClInclude Include="TabCtrl.h" />
+    <ClInclude Include="TabDbInfo.h" />
+    <ClInclude Include="TabOptions.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\bitmap_g.bmp" />
+    <Image Include="res\bitmap_l.bmp" />
+    <Image Include="res\bitmap_r.bmp" />
+    <Image Include="res\bitmap_y.bmp" />
+    <Image Include="res\bmp00001.bmp" />
+    <Image Include="res\bmp00002.bmp" />
+    <Image Include="res\down.bmp" />
+    <Image Include="res\flechedroit.bmp" />
+    <Image Include="res\hand_lef.bmp" />
+    <Image Include="res\ico00001.ico" />
+    <Image Include="res\icon_arr.ico" />
+    <Image Include="res\ko.bmp" />
+    <Image Include="res\left.bmp" />
+    <Image Include="res\logoMorphoBleu.bmp" />
+    <Image Include="res\logoMorphoNoir.bmp" />
+    <Image Include="res\LogoSagem.bmp" />
+    <Image Include="res\logoSagemBleu.bmp" />
+    <Image Include="res\logoSagemNoir.bmp" />
+    <Image Include="res\MSO_Demo.ico" />
+    <Image Include="res\no.ico" />
+    <Image Include="res\nok.ico" />
+    <Image Include="res\ok.bmp" />
+    <Image Include="res\ok.ico" />
+    <Image Include="res\ppage_en.ico" />
+    <Image Include="res\right.bmp" />
+    <Image Include="res\up.bmp" />
+    <Image Include="res\yes.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\cursor1.cur" />
+    <None Include="res\MSO_Demo.rc2" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="MSO_Demo.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

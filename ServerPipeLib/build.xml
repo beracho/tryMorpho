@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project
+	name="Create JAR for Project MsoPipeLib"
+	default="Build"
+	basedir="." >
+    
+	<!-- variables -->
+	<property name="src.dir"				value="src" />
+	
+	<property name="build.dir"				value="${basedir}/bin" />
+	<property name="lib.jar"				value="${basedir}/../../jar" />
+	<property name="mso.pipe.jar"			value="${basedir}/../../jar/MsoPipeLib.jar" />
+	
+	<!-- build -->
+    <target name="Build" depends="Compile">
+        <jar destfile="${mso.pipe.jar}"
+        	filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Class-Path" value="." />
+            </manifest>
+            <fileset dir="${basedir}/bin"/>
+        </jar>
+    </target>
+	
+	<!-- clean -->
+	<target name="Clean">
+		 <delete dir="${build.dir}"/>
+	</target>
+	
+	<!-- set path of external jars -->
+	<path id="external.classpath">
+	    
+	</path>
+	<!-- compile -->
+	<target name="Compile">
+		<mkdir dir="${build.dir}"/>
+		<javac includeantruntime="false" srcdir="${src.dir}" destdir="${build.dir}">
+			<classpath>
+				<path refid="external.classpath" />
+			</classpath>
+		</javac>
+	</target>
+	
+</project>

@@ -1,0 +1,318 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Français (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 12, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MSO_FVP_Login.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.fra\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ico00002.ico"
+IDI_ICON_OK             ICON                    "res\\icon1.ico"
+IDI_ICON_NONE           ICON                    "res\\ico00001.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 301, 222
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "A propos de MSO_FVP_Login"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,13,7,20,20
+    LTEXT           "MSO_FVP_Login",IDC_STATIC,47,15,86,8,SS_NOPREFIX
+    LTEXT           "Morpho    Copyright (C) 2007",IDC_STATIC,18,33,161,8
+    DEFPUSHBUTTON   "OK",IDOK,243,7,51,14,WS_GROUP
+    GROUPBOX        "Device Descriptor",IDC_STATIC,7,52,287,163
+    LTEXT           "Product",IDC_STATIC,16,75,26,8
+    EDITTEXT        IDC_PRODUCT_DESC,48,74,230,41,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    EDITTEXT        IDC_SENSOR_DESC,47,120,231,41,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    EDITTEXT        IDC_SOFTWARE_DESC,47,166,233,40,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    LTEXT           "Sensor",IDC_STATIC,13,120,23,8
+    LTEXT           "Software",IDC_STATIC,13,168,29,8
+END
+
+IDD_MSO_FVP_Login_DIALOG DIALOGEX 0, 0, 488, 386
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,233,41,140,19,ES_CENTER | ES_WANTRETURN
+    CONTROL         "",IDC_SMALL,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,226,2,1,268
+    CONTROL         "",IDC_LARGE,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,476,7,1,266
+    LTEXT           "Acquisition Stopped",IDC_STATIC_VIEWER,7,40,195,236,SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER
+    CTEXT           "",IDC_STATIC_COMMAND_MSG,7,288,211,18,SS_CENTERIMAGE
+    GROUPBOX        "New Enrollment",IDC_STATIC,225,7,244,364
+    CTEXT           "Viewer 1",IDC_STATIC_MINI_VIEWER1,233,62,96,93,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Viewer 2",IDC_STATIC_MINI_VIEWER2,233,164,96,93,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Viewer 3",IDC_STATIC_MINI_VIEWER3,233,266,97,93,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "  Enter User's Name and Press Enroll",IDC_STATIC_MSG1,233,17,233,18
+    CTEXT           "",IDC_STATIC_CAPTURE_MSG1,333,65,128,32,0,WS_EX_TRANSPARENT
+    CTEXT           "",IDC_STATIC_CAPTURE_MSG2,334,167,128,32,0,WS_EX_TRANSPARENT
+    CTEXT           "",IDC_STATIC_CAPTURE_MSG3,332,269,128,32,0,WS_EX_TRANSPARENT
+    ICON            "",IDC_STATIC_CAPTURE_ICON1,388,98,21,20
+    ICON            "",IDC_STATIC_CAPTURE_ICON2,390,202,21,20
+    ICON            "",IDC_STATIC_CAPTURE_ICON3,392,306,21,20
+    CTEXT           "",IDC_STATIC_COMMAND_MSG2,7,306,211,10,SS_CENTERIMAGE
+    CONTROL         140,IDC_CLOSE_BTN,"Static",SS_BITMAP | SS_NOTIFY | SS_REALSIZEIMAGE,9,331,40,40
+    CONTROL         142,IDC_ERDB_BTN,"Static",SS_BITMAP | SS_NOTIFY | SS_REALSIZEIMAGE,52,333,65,40
+    CONTROL         143,IDC_NEWUSER_BTN,"Static",SS_BITMAP | SS_NOTIFY | SS_REALSIZEIMAGE | WS_TABSTOP,173,331,43,40
+    CONTROL         141,IDC_ENROLL_BTN,"Static",SS_BITMAP | SS_NOTIFY,379,38,47,25
+    CONTROL         144,IDC_STATIC,"Static",SS_BITMAP,7,7,133,29
+    CONTROL         145,IDC_SECLVL_BTN,"Static",SS_BITMAP | SS_NOTIFY | SS_REALSIZEIMAGE,121,331,43,43
+    CONTROL         "",IDC_QUALITE_PROGRESS,"msctls_progress32",PBS_VERTICAL | WS_BORDER,208,40,11,236
+END
+
+IDD_CONNECTION DIALOG  0, 0, 178, 127
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MSO Login Demo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,54,106,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,118,106,50,14
+    GROUPBOX        "I/O Configuration",IDC_STATIC,33,7,135,93
+    COMBOBOX        IDC_PORT_COM,44,76,48,93,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_BAUD_RATE,111,76,47,82,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Serial Port",IDC_STATIC_COM,44,65,33,8
+    LTEXT           "Baud Rate",IDC_STATIC_BAUD,111,65,35,8
+    COMBOBOX        IDC_SERIAL_NAME,44,76,114,93,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "USB Devices",IDC_STATIC_SERIALNAME,44,66,50,8
+    GROUPBOX        "Device Model",IDC_STATIC,44,21,114,38
+    CONTROL         "MSO 200 RS232",IDC_RADIO_RS232,"Button",BS_AUTORADIOBUTTON | BS_MULTILINE,52,33,45,17
+    CONTROL         "MSO 300 USB",IDC_RADIO_USB,"Button",BS_AUTORADIOBUTTON | BS_MULTILINE | WS_GROUP,106,32,43,18
+END
+
+IDD_RESULT_DIALOG DIALOGEX 0, 0, 194, 190
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Result Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,67,161,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,127,161,50,14,NOT WS_TABSTOP
+    CTEXT           "",IDC_STATIC_MAIN_MSG,8,7,179,24,SS_CENTERIMAGE
+    LTEXT           "",IDC_STATIC_DETAILED_MSG,33,45,150,71
+    ICON            IDI_ICON_NONE,IDC_STATIC_ICON,8,46,21,20
+    CTEXT           "",IDC_STATIC_COUNTER,8,164,23,19,SS_CENTERIMAGE | WS_BORDER
+    LTEXT           "",IDC_STATIC_QUALITYSCORE_MSG,23,118,150,33
+END
+
+IDD_SECURITY_LEVEL_DIALOG DIALOGEX 0, 0, 209, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Security Level"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,62,42,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,125,42,50,14
+    LTEXT           "Security level :",IDC_STATIC,7,18,49,8
+    COMBOBOX        IDC_COMBO_SECURITY_LEVEL,62,17,113,259,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 6,20,1,0
+ PRODUCTVERSION 6,20,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040c04b0"
+        BEGIN
+            VALUE "CompanyName", "Morpho"
+            VALUE "FileDescription", "MSO_FVP_Login - MorphoSmart SDK Demonstration Software"
+            VALUE "FileVersion", "6,20,1,0"
+            VALUE "InternalName", "MSO_FVP_Login"
+            VALUE "LegalCopyright", "Copyright (C) 2018 Morpho"
+            VALUE "LegalTrademarks", ""
+            VALUE "OriginalFilename", "MSO_FVP_Login.EXE"
+            VALUE "ProductName", "MorphoSmart Software Development Kit"
+            VALUE "ProductVersion", "6,20,1,0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x40c, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 294
+        VERTGUIDE, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_MSO_FVP_Login_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 477
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 379
+    END
+
+    IDD_CONNECTION, DIALOG
+    BEGIN
+        VERTGUIDE, 44
+        VERTGUIDE, 158
+        VERTGUIDE, 168
+    END
+
+    IDD_RESULT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 187
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_SECURITY_LEVEL_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 208
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_CLOSE_BMP           BITMAP                  "res\\btn\\Close.bmp"
+IDB_ENROLL_BMP          BITMAP                  "res\\btn\\Enroll.bmp"
+IDB_ERDB_BMP            BITMAP                  "res\\btn\\EraseBd.bmp"
+IDB_NEWUSER_BMP         BITMAP                  "res\\btn\\NewUser.bmp"
+IDB_SAGEM               BITMAP                  "res\\btn\\Morpho.bmp"
+IDB_SecLvl              BITMAP                  "res\\btn\\ScLevel.bmp"
+IDB_BITMAP_KO           BITMAP                  "res\\ko.bmp"
+IDB_BITMAP_OK           BITMAP                  "res\\ok.bmp"
+IDB_DISABLED_CLOSE      BITMAP                  "res\\btn\\Disabled_Close.bmp"
+IDB_DESABLED_ERDB       BITMAP                  "res\\btn\\Disabled_EraseBd.bmp"
+IDB_DISABLED_NEWUSER    BITMAP                  "res\\btn\\Disabled_NewUser.bmp"
+IDB_DESABLED_SCLEVEL    BITMAP                  "res\\btn\\Disabled_ScLevel.bmp"
+IDB_STOP_ENROLL_BMP     BITMAP                  "res\\btn\\Stop_Enroll.bmp"
+IDB_IDENTIFY_MODE_BMP   BITMAP                  "res\\btn\\Identify_Mode.bmp"
+IDB_EMPTY_BMP           BITMAP                  "res\\btn\\Empty.bmp"
+IDB_CONFIG_BMP          BITMAP                  "res\\btn\\config.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&A propos de MSO_FVP_Login..."
+END
+
+#endif    // Français (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE 12, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\MSO_FVP_Login.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.fra\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

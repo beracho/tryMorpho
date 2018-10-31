@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project
+	name="Create JAR for Project MSOSECU_Java (MSOSECUJavaWrapper)"
+	default="Build"
+	basedir="." >
+    
+	<!-- variables -->
+	<property name="src.dir"				value="src" />
+	<property name="build.dir"				value="${basedir}/bin" />
+	<property name="dist.dir"				value="${basedir}/../../bin/Exe/Win32/Release" />
+	<property name="mso.secu.jar"			value="${dist.dir}/msosecu-6.20.1.0.jar" />
+	
+	<!-- build -->
+    <target name="Build" depends="Compile">
+        <jar destfile="${mso.secu.jar}"
+        	filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Class-Path" value="." />
+            </manifest>
+            <fileset dir="${basedir}/bin"/>
+        </jar>
+		
+		<copy todir="${basedir}/../../bin/Exe/x64/Release/">
+			<fileset dir="${basedir}/../../bin/Exe/Win32/Release/">
+				<include name="*.jar"/>     
+			</fileset>
+		</copy>
+    </target>
+	
+	<!-- clean -->
+	<target name="Clean">
+		 <delete dir="${build.dir}"/>
+	</target>
+	
+	<!-- compile -->
+	<target name="Compile">
+		<mkdir dir="${build.dir}"/>
+		<mkdir dir="${dist.dir}"/>
+		<mkdir dir="${basedir}/../../bin/Exe/x64/Release/"/>
+		
+		<javac includeantruntime="false" srcdir="${src.dir}" destdir="${build.dir}">
+		</javac>
+	</target>
+	
+</project>

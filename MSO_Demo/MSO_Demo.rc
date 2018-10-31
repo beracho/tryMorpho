@@ -1,0 +1,1075 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Français (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 12, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MSO_Demo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.fra\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MSO_Demo.ico"
+IDI_NOK                 ICON                    "res\\nok.ico"
+IDI_NO                  ICON                    "res\\no.ico"
+IDI_OK                  ICON                    "res\\ok.ico"
+IDI_YES                 ICON                    "res\\yes.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 341, 197
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About MSO_Demo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,7,20,20
+    LTEXT           "MSO_Demo",IDC_STATIC,40,12,48,13,SS_NOPREFIX
+    LTEXT           "Morpho  Copyright (C) 2005",IDC_STATIC,113,14,148,8
+    DEFPUSHBUTTON   "OK",IDOK,284,9,50,14,WS_GROUP
+    GROUPBOX        "Device Descriptor",IDC_STATIC,7,34,327,154
+    LTEXT           "Product",IDC_STATIC,19,52,26,8
+    LTEXT           "Sensor",IDC_STATIC,17,97,23,8
+    LTEXT           "Software",IDC_STATIC,16,141,29,8
+    EDITTEXT        IDC_PRODUCT_DESC,53,49,269,38,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    EDITTEXT        IDC_SENSOR_DESC,53,94,269,38,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    EDITTEXT        IDC_SOFTWARE_DESC,53,139,269,38,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+END
+
+IDD_MSO_DEMO_DIALOG DIALOGEX 0, 0, 474, 386
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Morpho Smart"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Database and Files Management",IDC_STATIC,244,167,223,203,BS_LEFT
+    CONTROL         IDB_BITMAP_LGREEN,IDC_STATIC_BMP_BASE,"Static",SS_BITMAP,410,175,7,6
+    PUSHBUTTON      "Start",IDC_BUTTON_START,150,241,74,16
+    PUSHBUTTON      "Close Com and Exit",IDC_BUTTON_CLOSE,7,353,83,17
+    GROUPBOX        "Basic Biometric Operations",IDC_STATIC,7,7,222,343
+    CONTROL         "List1",IDC_LIST_USER,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,248,180,155,174
+    CTEXT           "",IDC_STATIC_ASYNC_CMD_MSG,150,315,74,16,SS_CENTERIMAGE | SS_SUNKEN
+    PUSHBUTTON      "Remove All",IDC_BUTTON_REMOVE_ALL,410,307,50,14
+    PUSHBUTTON      "Remove User",IDC_BUTTON_REMOVE_USER,410,289,50,14
+    PUSHBUTTON      "Add User",IDC_BUTTON_ADD_USER,410,231,50,14
+    CONTROL         "",IDC_PSHEET_AREA,"Static",SS_BLACKFRAME,12,16,212,224
+    PUSHBUTTON      "Create Base",IDC_BUTTON_CREATE_BASE,410,331,50,14,WS_DISABLED
+    PUSHBUTTON      "Destroy Base",IDC_BUTTON_DESTROY_BASE,410,350,50,14
+    CONTROL         IDB_BITMAP_LOGO_SAGEM_BLUE,IDC_BITMAP_LOGO_SAGEM,"Static",SS_BITMAP | SS_SUNKEN,243,7,224,52,WS_EX_DLGMODALFRAME
+    CTEXT           "",IDC_STATIC_ASYNC_ENROLL_MSG,150,260,74,48,SS_SUNKEN
+    CONTROL         "Progress1",IDC_PROGRESS_ADD_USER,"msctls_progress32",PBS_SMOOTH | WS_BORDER,248,359,155,6
+    PUSHBUTTON      "Verify Match",IDC_BUTTON_VERIF_MATCH,410,208,50,14
+    PUSHBUTTON      "Identify Match",IDC_BUTTON_IDENT_MATCH,410,191,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,410,326,49,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,410,226,49,1
+    LTEXT           "Base Status",IDC_STATIC,417,174,39,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,410,185,49,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,410,283,49,1
+    CONTROL         "No Check",IDC_CHECK_NO_CHECK,"Button",BS_AUTOCHECKBOX,410,249,51,10
+    PUSHBUTTON      "Update User",IDC_BUTTON_UPDATE_USER,410,264,50,14
+    LTEXT           "",IDC_IMAGE_INFO,12,336,212,9,SS_SUNKEN
+    LTEXT           "Static",IDC_STATIC_ANIMATION_PIC,17,241,90,93,SS_SUNKEN,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_TABCTRL,"SysTabControl32",0x0,244,57,223,108
+    CONTROL         "",IDC_QUALITE_PROGRESS,"msctls_progress32",PBS_SMOOTH | PBS_VERTICAL | WS_BORDER,114,261,16,73,WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    LTEXT           "Static",IDC_STATIC_ASYNC_ENROLL_DIRECTION_PIC,150,260,74,48
+    PUSHBUTTON      "Reboot Soft",IDC_REBOOTSOFT,131,353,93,17
+    CTEXT           "",IDC_STATIC_QUALITY_MSG,114,242,16,16,SS_CENTERIMAGE | SS_SUNKEN
+END
+
+IDD_PPAGE_ENROLL DIALOGEX 0, 0, 182, 209
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Enroll"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "User ID",IDC_STATIC,14,47,25,8
+    LTEXT           "Firstname",IDC_STATIC,14,65,31,8
+    LTEXT           "Lastname",IDC_STATIC,14,84,32,8
+    EDITTEXT        IDC_EDIT_ENROLL_ID,91,42,40,14,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_EDIT_ENROLL_FIRSTNAME,91,61,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ENROLL_LASTNAME,91,79,40,14,ES_AUTOHSCROLL
+    LTEXT           "Number of fingers",IDC_STATIC,14,97,56,8
+    CONTROL         "1",IDC_RADIO_ENROLL_ONEFINGER,"Button",BS_AUTORADIOBUTTON | WS_GROUP,91,96,20,10
+    CONTROL         "2",IDC_RADIO_ENROLL_TWOFINGERS,"Button",BS_AUTORADIOBUTTON,119,96,20,10
+    GROUPBOX        "New Enrollment",IDC_STATIC,6,35,169,73
+    LTEXT           "This operation allows you to add a new user in the database. Fill the following fields and press start. The MSO will light up to capture your fingers. ",IDC_STATIC,6,7,169,29
+    CONTROL         "Save PK in DataBase",IDC_SAVE_IN_BD_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,96,111,84,10
+    COMBOBOX        IDC_OUTPUT_FILE_TYPE,86,156,89,184,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_OUTPUT_FVP_FILE_TYPE,86,172,91,129,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMPRESSION_TYPE,86,140,91,112,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "FP Template Type",IDC_STATIC,8,156,63,12
+    LTEXT           "FVP Template Type",IDC_STATIC_FVP,8,172,65,12
+    LTEXT           "Export image",IDC_STATIC,8,141,58,12
+    LTEXT           "Finger index",IDC_STATIC,8,126,58,12
+    COMBOBOX        IDC_FINGER_INDEX,86,124,91,112,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Update template",IDC_CHECK_UPDATE_FINGER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,111,66,10
+END
+
+IDD_PPAGE_IDENTIFY DIALOGEX 0, 0, 193, 142
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Identify"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "This operation allows you to identify a user in the database. Press start and put your finger on the MSO sensor. If you have already been enrolled, the device will identify you.",IDC_STATIC,7,7,179,54
+END
+
+IDD_PPAGE_CODE DIALOGEX 0, 0, 201, 190
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Capture"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "File",IDC_RADIO_CODE_OUTPUTFILE,"Button",BS_AUTORADIOBUTTON | BS_MULTILINE | WS_GROUP,19,106,28,8
+    CONTROL         "Smart Card",IDC_RADIO_CODE_OUTPUTSMC,"Button",BS_AUTORADIOBUTTON | BS_MULTILINE,19,125,51,8
+    EDITTEXT        IDC_EDIT_CODE_ID,14,49,40,14,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_EDIT_CODE_FIRSTNAME,62,49,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IDC_EDIT_CODE_LASTNAME,110,49,40,14,ES_AUTOHSCROLL
+    CONTROL         "1",IDC_RADIO_CODE_ONEFINGER,"Button",BS_AUTORADIOBUTTON | WS_GROUP,80,65,20,10
+    CONTROL         "2",IDC_RADIO_CODE_TWOFINGER,"Button",BS_AUTORADIOBUTTON,115,65,20,10
+    LTEXT           "Capture type",IDC_STATIC,11,79,43,8
+    CONTROL         "Enroll",IDC_RADIO_CAPTURE_ENROLL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,56,78,33,10
+    CONTROL         "Verif",IDC_RADIO_CAPTURE_VERIF,"Button",BS_AUTORADIOBUTTON,89,78,30,10
+    CONTROL         "Latent Detect.",IDC_LATENT_DETECT,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_DISABLED | WS_GROUP | WS_TABSTOP,123,77,38,13
+    LTEXT           "This command extracts the features of 1 or 2 fingers and exports the templates in order to store them on an ouput support, such as a smart card.",IDC_STATIC,7,2,175,27
+    LTEXT           "User ID",IDC_STATIC,14,38,25,8
+    LTEXT           "Firstname",IDC_STATIC,62,38,31,8
+    LTEXT           "Lastname",IDC_STATIC,110,38,32,8
+    LTEXT           "Number of fingers",IDC_STATIC,12,66,56,8
+    COMBOBOX        IDC_OUTPUT_FILE_TYPE,10,157,82,194,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Embed in Token Bio Envelope",IDC_CHECK_CODE_TOKEN_BIO,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,47,106,110,8
+    COMBOBOX        IDC_WORKFLOW_TYPE,72,123,90,82,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "FP Template Type :",IDC_STATIC,9,143,66,8
+    GROUPBOX        "Output",IDC_STATIC,6,95,179,94
+    GROUPBOX        "Code & Export",IDC_STATIC,6,30,179,159
+    LTEXT           "FVP Template Type :",IDC_STATIC_FVP,96,143,68,9
+    COMBOBOX        IDC_OUTPUT_FVP_FILE_TYPE,100,157,82,132,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PPAGE_VERIFY DIALOGEX 0, 0, 190, 190
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Verify"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "The verify command allows you to authenticate someone thanks to an input item like a Smart Card. The MSO captures a finger and verifies if the template matches. ",IDC_STATIC,7,0,176,35
+    GROUPBOX        "Use Smart Card (MSO35x)",IDC_STATIC,7,82,176,102
+    CONTROL         "File (Simulation)",IDC_RADIO_INPUTFILE,"Button",BS_AUTORADIOBUTTON | BS_MULTILINE | WS_GROUP,16,49,90,12
+    CONTROL         "Check in local base (select a user first)",IDC_RADIO_LOCALBASE,
+                    "Button",BS_AUTORADIOBUTTON,16,66,137,10
+    CONTROL         "External read (using PC/SC)",IDC_RADIO_INPUTSMC,"Button",BS_AUTORADIOBUTTON,16,92,114,10
+    CONTROL         "Internal read (read inside MSO)",IDC_RADIO_INPUTSMC_INTERNAL,
+                    "Button",BS_AUTORADIOBUTTON,16,107,122,10
+    LTEXT           "Number of fingers to read :",IDC_STATIC,16,141,84,8
+    CONTROL         "1",IDC_RADIO_VERIF_ONEFINGER,"Button",BS_AUTORADIOBUTTON | WS_DISABLED | WS_GROUP,106,140,20,10
+    CONTROL         "2",IDC_RADIO_VERIF_TWOFINGERS,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,128,140,20,10
+    COMBOBOX        IDC_OUTPUT_FILE_TYPE,15,167,132,82,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "Template Type in Smart Card :",IDC_STATIC,16,154,96,8
+    COMBOBOX        IDC_WORKFLOW_TYPE,69,123,90,82,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "WorkFlow type :",IDC_STATIC,16,124,52,8
+    GROUPBOX        "Authentication Mode",IDC_STATIC,7,35,176,149
+END
+
+IDD_MSO_DISPLAY_RESULT DIALOGEX 0, 0, 308, 177
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Result Window"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,250,156,50,14
+    CTEXT           "Static",IDC_STATIC_MSG1,15,7,285,26,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Static",IDC_STATIC_MSG3,15,64,285,21,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_STATIC_MSG4,15,105,285,49,ES_CENTER | ES_MULTILINE | ES_READONLY | ES_WANTRETURN | NOT WS_BORDER | 0x200,WS_EX_STATICEDGE
+    CTEXT           "Static",IDC_STATIC_MSG5,15,85,285,20,SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_STATIC_MSG2,15,32,285,32,ES_CENTER | ES_MULTILINE | ES_READONLY | ES_WANTRETURN | NOT WS_BORDER,WS_EX_STATICEDGE
+END
+
+IDD_PPAGE_PROCESS DIALOGEX 0, 0, 206, 217
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+CAPTION "Process"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Finger #1",IDC_STATIC,7,7,191,75
+    GROUPBOX        "Finger #2",IDC_STATIC,7,86,191,77
+    CONTROL         "",IDC_STATIC_MINI_VIEWER_1_1,"Static",SS_LEFTNOWORDWRAP | WS_BORDER | WS_GROUP,10,19,59,59
+    LTEXT           "",IDC_STATIC_MINI_VIEWER_1_2,73,19,59,59,WS_BORDER
+    LTEXT           "",IDC_STATIC_MINI_VIEWER_1_3,136,19,59,59,WS_BORDER
+    LTEXT           "",IDC_STATIC_MINI_VIEWER_2_1,10,101,59,59,WS_BORDER
+    LTEXT           "",IDC_STATIC_MINI_VIEWER_2_2,73,100,59,59,WS_BORDER
+    LTEXT           "",IDC_STATIC_MINI_VIEWER_2_3,136,100,59,59,WS_BORDER
+    CTEXT           "Static",IDC_SYNC_QUALITY,12,167,177,21,0,WS_EX_CLIENTEDGE
+END
+
+IDD_CONNECTION DIALOG 0, 0, 199, 161
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MSO Demo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,44,140,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,119,140,50,14
+    LTEXT           "",IDC_PSHEET_AREA,19,0,173,135,SS_SUNKEN
+END
+
+IDD_UPDATE_USER_DLG DIALOGEX 0, 0, 125, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Update User"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,74,54,14
+    PUSHBUTTON      "Cancel",IDCANCEL,64,74,54,14
+    LTEXT           "User ID",IDC_STATIC,7,16,25,8
+    LTEXT           "Firstname",IDC_STATIC,7,33,31,8
+    LTEXT           "Lastname",IDC_STATIC,7,50,32,8
+    EDITTEXT        IDC_EDIT_ENROLL_ID,77,13,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ENROLL_FIRSTNAME,77,31,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ENROLL_LASTNAME,77,48,40,14,ES_AUTOHSCROLL
+END
+
+IDD_PPAGE_GET_IMAGE DIALOGEX 0, 0, 170, 141
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "FingerPrint Image"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "This operation allows you to capture an image in order to store it on an ouput support.",IDC_STATIC,7,7,157,31
+    CONTROL         "Verify detection mode",IDC_RADIO_GET_IMAGE_VERIF_DETECT_MODE_CHOICE,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,26,36,138,10
+    CONTROL         "Enrollment detection mode",IDC_RADIO_GET_IMAGE_ENROLL_DETECT_MODE_CHOICE,
+                    "Button",BS_AUTORADIOBUTTON,26,49,138,10
+    CONTROL         "Latent Detect.",IDC_GET_IMAGE_LATENT,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,26,62,61,10
+    LTEXT           "Image format",IDC_STATIC,26,79,62,8
+    COMBOBOX        IDC_COMPRESSION_TYPE,71,78,72,103,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_COMPRESSION_RATE,93,94,50,12,ES_AUTOHSCROLL | WS_DISABLED | WS_GROUP
+    LTEXT           "Compression rate",IDC_TEXT_COMPRESSION_RATE,26,96,55,8,WS_DISABLED
+END
+
+IDD_IMAGE DIALOG 0, 0, 430, 446
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "ImageViewer"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,189,427,50,14
+    CTEXT           "No image available",IDC_IMAGE,7,7,416,416,SS_SUNKEN
+END
+
+IDD_PROGRESS_INIT DIALOG 0, 0, 270, 122
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Initialisation, please wait..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "TEXT",IDC_STATIC_MESS,7,40,139,10
+    LTEXT           "TEXT",IDC_STATIC_MESS2,7,55,139,10
+    LTEXT           "TEXT",IDC_STATIC_MESS3,7,70,139,10
+    LTEXT           "TEXT",IDC_STATIC_MESS4,7,85,139,10
+    LTEXT           "TEXT",IDC_STATIC_MESS5,7,100,139,10
+    LTEXT           "TEXT",IDC_STATIC_MESS10,153,40,109,10
+    LTEXT           "TEXT",IDC_STATIC_MESS11,153,55,109,10
+    LTEXT           "TEXT",IDC_STATIC_MESS12,153,70,109,10
+    LTEXT           "TEXT",IDC_STATIC_MESS13,153,85,109,10
+    LTEXT           "TEXT",IDC_STATIC_MESS14,153,100,109,10
+    LTEXT           "Static",IDC_STATIC_MAINMESS,7,14,139,19
+    LTEXT           "",IDC_STATIC_BIOAVI,153,13,62,14
+END
+
+IDD_MSO_CONF DIALOGEX 0, 0, 204, 202
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MSO Configuration"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,149,181,50,14
+    EDITTEXT        IDC_EDIT_SERIAL_NUMBER,31,15,168,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "MSO Serial Number",IDC_SERIAL_NUM_TXT,30,7,63,8
+    EDITTEXT        IDC_EDIT_FAR,31,50,168,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Max FAR",IDC_FAR_TXT,30,41,30,8
+    CONTROL         "List1",IDC_SECU_OPTIONS,"SysListView32",LVS_REPORT | LVS_NOSCROLL | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,31,82,168,55,WS_EX_STATICEDGE
+    LTEXT           "Security Options",IDC_OPTIONS_TXT,30,74,52,8
+    EDITTEXT        IDC_EDIT_MINMSL,31,158,168,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Minimum Multimodal Security Level",IDC_MINMSL_TXT,30,148,110,8
+END
+
+IDD_CONNECTION_PSHEET_USB DIALOGEX 0, 0, 153, 113
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_SERIAL_NAME,19,49,116,93,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Mso Serial Number",IDC_STATIC,7,7,139,99
+END
+
+IDD_CONNECTION_PSHEET_SERIAL DIALOG 0, 0, 153, 113
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_PORT_COM,18,37,53,82,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_BAUD_RATE,82,37,52,82,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Serial Port",IDC_STATIC_COM,18,26,47,8
+    LTEXT           "Baud Rate",IDC_STATIC_BAUD,80,26,48,8
+    GROUPBOX        "Serial Port properties",IDC_STATIC,7,7,139,99
+END
+
+IDD_CONNECTION_PSHEET_SLAVEPIPE DIALOG 0, 0, 153, 113
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "IPAddress1",IDC_IPADDRESS,"SysIPAddress32",WS_TABSTOP,32,29,89,16
+    EDITTEXT        IDC_IPPORT,42,47,49,16,ES_AUTOHSCROLL
+    LTEXT           "Port",IDC_STATIC,12,49,22,11
+    EDITTEXT        IDC_ADDRESS_NAME,12,30,130,14,ES_AUTOHSCROLL
+    CONTROL         "Ip Format",IDC_IP_FORMAT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,20,16,45,10
+    CONTROL         "URL Format",IDC_IP_FORMAT2,"Button",BS_AUTORADIOBUTTON,72,16,54,10
+    GROUPBOX        "Host connection",IDC_STATIC,7,7,139,99,WS_GROUP
+    COMBOBOX        IDC_SERIAL_NAME,26,86,116,93,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Test (Get MSO list)",IDC_TEST_HOST,12,68,70,14
+END
+
+IDD_BASE_OPTION DIALOGEX 0, 0, 231, 120
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Create Data Base"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Maximum number of records",IDC_STATIC,7,18,91,8
+    EDITTEXT        IDC_MAX_RECORD,127,16,62,16,ES_AUTOHSCROLL
+    LTEXT           "Number of fingers per record",IDC_STATIC,7,44,94,8
+    EDITTEXT        IDC_NUM_FINGER,127,40,62,16,ES_AUTOHSCROLL
+    LTEXT           "Encrypt database",IDC_STATIC,7,65,89,8
+    CONTROL         "No",IDC_RADIO_NO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,127,66,25,10
+    CONTROL         "Yes",IDC_RADIO_YES,"Button",BS_AUTORADIOBUTTON,164,66,27,10
+    DEFPUSHBUTTON   "OK",IDOK,41,95,72,18
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,129,95,72,18
+END
+
+IDD_PPAGE_MOC DIALOGEX 0, 0, 192, 182
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Match On Card"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "This command extracts the template of a finger in order to store or match it in a smart card.",IDC_STATIC,15,3,152,19
+    CONTROL         "Store",IDC_RADIO_MOC_ACTION_TYPE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,19,99,35,8
+    CONTROL         "Match",IDC_RADIO_MOC_VERIF,"Button",BS_AUTORADIOBUTTON | BS_MULTILINE,19,112,35,8
+    CONTROL         "Get Info",IDC_GET_INFO,"Button",BS_AUTORADIOBUTTON | BS_MULTILINE,20,154,39,10
+    GROUPBOX        "Template Type",IDC_STATIC,15,22,164,26
+    GROUPBOX        "Match On Card Parameters",IDC_STATIC,15,52,164,44
+    CONTROL         "Latent Detect.",IDC_LATENT_DETECT,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_GROUP | WS_TABSTOP,79,116,56,10
+    CONTROL         IDB_HAND_LEFT,IDC_HAND_LEFT,"Static",SS_BITMAP,98,138,13,13,WS_EX_TRANSPARENT
+    CONTROL         IDD_PPAGE_MOC,IDC_HAND_RIGHT,"Static",SS_BITMAP,134,138,13,13,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_FINGERPRINT_LEFT_LITTLE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,86,135,9,9
+    CONTROL         "",IDC_FINGERPRINT_LEFT_RING,"Button",BS_AUTORADIOBUTTON,95,128,9,9
+    CONTROL         "",IDC_FINGERPRINT_LEFT_MIDDLE,"Button",BS_AUTORADIOBUTTON,105,127,9,9
+    CONTROL         "",IDC_FINGERPRINT_LEFT_INDEX,"Button",BS_AUTORADIOBUTTON,114,130,9,9
+    CONTROL         "",IDC_FINGERPRINT_LEFT_THUMB,"Button",BS_AUTORADIOBUTTON,116,138,9,9
+    CONTROL         "",IDC_FINGERPRINT_RIGHT_THUMB,"Button",BS_AUTORADIOBUTTON,123,138,9,9
+    CONTROL         "",IDC_FINGERPRINT_RIGHT_INDEX,"Button",BS_AUTORADIOBUTTON,126,130,9,9
+    CONTROL         "",IDC_FINGERPRINT_RIGHT_MIDDLE,"Button",BS_AUTORADIOBUTTON,136,127,9,9
+    CONTROL         "",IDC_FINGERPRINT_RIGHT_RING,"Button",BS_AUTORADIOBUTTON,145,130,9,9
+    CONTROL         "",IDC_FINGERPRINT_RIGHT_LITTLE,"Button",BS_AUTORADIOBUTTON,154,135,9,9
+    LTEXT           "Smart Card Type : ",IDC_STATIC,19,65,60,8
+    LTEXT           "Template used : ",IDC_STATIC,25,124,54,8,NOT WS_VISIBLE
+    LTEXT           "Choose a Finger : ",IDC_STATIC_CHOOSE_FINGER,21,132,58,8,NOT WS_VISIBLE
+    COMBOBOX        IDC_CARD_TYPE,79,63,91,65,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_TEMPLATE_TYPE,17,32,153,65,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Diversification Data : ",IDC_STATIC,19,82,68,8
+    LTEXT           "0x ",IDC_STATIC,88,82,10,8
+    EDITTEXT        IDC_D0,98,80,14,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_D1,115,80,14,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_D2,132,80,14,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_D3,149,80,14,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL         "Full CCID",IDC_FULL_CCID,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,171,44,10
+    EDITTEXT        IDC_TEMPLATE_MAX_SIZE,79,99,24,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Template Max Size",IDC_STATIC_MAX_SIZE,106,101,64,8
+    EDITTEXT        IDC_APDU_MAX_LENGTH,79,167,24,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           " APDU Max Length",IDC_STATIC_MAX_LENGTH,106,168,56,13
+END
+
+IDD_TAB_DB_INFO DIALOGEX 0, 0, 183, 92
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Maximum nb of records\t:",IDC_STATIC,17,17,86,8
+    LTEXT           "",IDC_MAX_NB_RECORDS,103,18,25,8
+    LTEXT           "Current nb of records\t:",IDC_STATIC,17,28,86,8
+    LTEXT           "",IDC_CURRENT_NB_RECORDS,103,28,22,8
+    LTEXT           "Nb of fingers per record\t:",IDC_STATIC,17,38,85,8
+    LTEXT           "",IDC_NB_FINGERS,103,38,25,8
+    LTEXT           "Encrypted database\t:",IDC_ENCRY_DB,17,50,88,8
+    LTEXT           "",IDC_VAL_ECRYP_DB,103,50,64,8
+END
+
+IDD_TAB_BIO_SETTINGS DIALOGEX 0, 0, 223, 94
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Matching Threshold (0-10) ",IDC_STATIC,7,3,87,8
+    LTEXT           "Timeout (sec.)",IDC_STATIC,127,3,46,8
+    EDITTEXT        IDC_EDIT_TIMEOUT,180,1,17,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_THRESHOLD,99,1,17,12,ES_AUTOHSCROLL
+    LTEXT           "Security Level",IDC_STATIC,7,33,62,8
+    COMBOBOX        IDC_FFD_SECU_LEVEL,75,31,50,82,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Coder choice",IDC_STATIC,7,17,62,8
+    COMBOBOX        IDC_CODER_CHOICE,75,15,50,82,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Matching strategy",IDC_STATIC,7,47,62,8
+    COMBOBOX        IDC_BIO_MODE,75,47,50,82,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Force Finger Placement on Top",IDC_CHECK_FFPLACEMENT_ON_TOP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,60,115,10
+    CONTROL         "Advanced Security Levels Compatibility Required",IDC_CHECK_ASLC,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,69,167,10
+    CONTROL         "Fingerprint Quality Threshold",IDC_CHECK_FINGERPRINT_QUALITY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,78,110,10
+    EDITTEXT        IDC_EDIT_FINGERPRINT_QUALITY,118,78,22,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER | WS_DISABLED
+    LTEXT           "Acquisition Strategy",IDC_STATIC,149,19,65,8
+    COMBOBOX        IDC_STRATEGY_MODE,147,31,64,82,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_TAB_OPTIONS DIALOGEX 0, 0, 268, 102
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Image Viewer",IDC_CHECK_MINI_VIEWER_ACTIVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,17,107,10
+    CONTROL         "Image Full rezolution Viewer",IDC_CHECK_MAIN_VIEWER_ACTIVE,
+                    "Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,7,7,105,10
+    CONTROL         "Export Matching Pk Number",IDC_CHECK_EXPORT_NUM_PK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,72,101,10
+    CONTROL         "WakeUp with led off",IDC_CHECK_WAKE_UP_MODE,"Button",BS_AUTOCHECKBOX | BS_NOTIFY | WS_TABSTOP,7,82,100,11
+    CONTROL         "Async Positioning Command",IDC_CHECK_ASYNC_COMMAND,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,28,109,8
+    CONTROL         "Async Enrollment Command",IDC_CHECK_ENROLL_COMMAND,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,38,113,8
+    CONTROL         "Async Detect Quality",IDC_CHECK_ASYNC_DETECT_QUALITY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,48,113,8
+    CONTROL         "Power Supply Configuration",IDC_CHECK_CONFIG_KEYUSER,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,113,56,113,8
+    CONTROL         "Async Code Quality",IDC_CHECK_ASYNC_CODE_QUALITY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,58,92,8
+    LTEXT           "Sensor Window Position :",IDC_STATIC,113,67,96,9
+    COMBOBOX        IDC_CONFIG_SENSOR_WIN_POSITION,112,78,107,126,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_MSO_ISO19794_FIR_INFO DIALOGEX 0, 0, 288, 117
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "ISO-19794-4 FIR Information"
+FONT 8, "MS Sans Serif", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "ISO-19797-4 FIR Information",IDC_STATIC_GRPBOX_INFO,8,2,272,59
+    LTEXT           "Horizontal resolution:",IDC_STATIC,14,15,65,8
+    EDITTEXT        IDC_EDIT_RESX,106,13,34,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Vertical resolution:",IDC_STATIC,159,15,57,8
+    EDITTEXT        IDC_EDIT_RESY,242,13,34,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Number of columns (width):",IDC_STATIC,14,31,85,8
+    EDITTEXT        IDC_EDIT_NBCOLS,106,29,34,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Number of rows (height):",IDC_STATIC,159,31,77,8
+    EDITTEXT        IDC_EDIT_NBROWS,242,29,34,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Number of bits per pixel:",IDC_STATIC,14,46,75,8
+    EDITTEXT        IDC_EDIT_NB_BIT_PPIXEL,106,45,34,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Desired Compression",IDC_STATIC_GRPBOX_COMPRESS,8,64,272,28
+    LTEXT           "Desired image format:",IDC_STATIC,14,77,68,8
+    COMBOBOX        IDC_COMBO_DESIRED_COMPRESS,106,75,96,83,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,119,96,50,14,BS_CENTER
+END
+
+IDD_DIALOG_BIO_DATA_ENCRYPTION DIALOGEX 0, 0, 227, 70
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Enable Biometric Data Encryption"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,118,45,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,170,45,50,14
+    LTEXT           "Diversification Data :",IDC_STATIC,7,14,68,8
+    EDITTEXT        IDC_EDIT_DIVERSIFICATION_DATA,7,26,213,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_GET_INFO DIALOGEX 0, 0, 251, 230
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Product Info"
+FONT 8, "MS Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,194,209,50,14
+    EDITTEXT        IDC_EDIT_MSG,29,20,202,178,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 6,20,1,0
+ PRODUCTVERSION 6,20,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080004b0"
+        BEGIN
+            VALUE "CompanyName", "Morpho"
+            VALUE "FileDescription", "MSO_Demo - MorphoSmart SDK Demonstration Software"
+            VALUE "FileVersion", "6,20,1,0"
+            VALUE "InternalName", "MSO_Demo"
+            VALUE "LegalCopyright", "Copyright (C) 2018 Morpho"
+            VALUE "OriginalFilename", "MSO_Demo.EXE"
+            VALUE "ProductName", "MorphoSmart Software Development Kit"
+            VALUE "ProductVersion", "6,20,1,0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x800, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 334
+        VERTGUIDE, 53
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+
+    IDD_MSO_DEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 467
+        VERTGUIDE, 12
+        VERTGUIDE, 224
+        VERTGUIDE, 229
+        VERTGUIDE, 283
+        VERTGUIDE, 323
+        VERTGUIDE, 345
+        VERTGUIDE, 403
+        VERTGUIDE, 410
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 370
+        HORZGUIDE, 293
+        HORZGUIDE, 315
+    END
+
+    IDD_PPAGE_ENROLL, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 175
+        VERTGUIDE, 15
+        VERTGUIDE, 91
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 206
+        HORZGUIDE, 73
+        HORZGUIDE, 91
+        HORZGUIDE, 110
+        HORZGUIDE, 128
+    END
+
+    IDD_PPAGE_IDENTIFY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_PPAGE_CODE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 175
+        VERTGUIDE, 19
+        BOTTOMMARGIN, 189
+        HORZGUIDE, 42
+        HORZGUIDE, 56
+        HORZGUIDE, 70
+        HORZGUIDE, 83
+        HORZGUIDE, 95
+        HORZGUIDE, 113
+        HORZGUIDE, 137
+    END
+
+    IDD_PPAGE_VERIFY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 183
+        VERTGUIDE, 16
+        VERTGUIDE, 159
+        BOTTOMMARGIN, 189
+        HORZGUIDE, 145
+        HORZGUIDE, 184
+    END
+
+    IDD_MSO_DISPLAY_RESULT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        VERTGUIDE, 15
+        VERTGUIDE, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_PPAGE_PROCESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        VERTGUIDE, 7
+        VERTGUIDE, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_CONNECTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 19
+        RIGHTMARGIN, 192
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_UPDATE_USER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 118
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_PPAGE_GET_IMAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 164
+        VERTGUIDE, 26
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+    END
+
+    IDD_IMAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 423
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 441
+    END
+
+    IDD_PROGRESS_INIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 262
+        VERTGUIDE, 146
+        VERTGUIDE, 153
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+        HORZGUIDE, 80
+    END
+
+    IDD_MSO_CONF, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_CONNECTION_PSHEET_USB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 146
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_CONNECTION_PSHEET_SERIAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 146
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_CONNECTION_PSHEET_SLAVEPIPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 146
+        VERTGUIDE, 12
+        VERTGUIDE, 142
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_BASE_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 113
+    END
+
+    IDD_PPAGE_MOC, DIALOG
+    BEGIN
+        RIGHTMARGIN, 170
+        VERTGUIDE, 79
+        VERTGUIDE, 179
+        BOTTOMMARGIN, 181
+        HORZGUIDE, 22
+        HORZGUIDE, 38
+        HORZGUIDE, 69
+        HORZGUIDE, 86
+    END
+
+    IDD_TAB_DB_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_TAB_BIO_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_TAB_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_MSO_ISO19794_FIR_INFO, DIALOG
+    BEGIN
+        RIGHTMARGIN, 287
+        BOTTOMMARGIN, 113
+    END
+
+    IDD_DIALOG_BIO_DATA_ENCRYPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+
+    IDD_DIALOG_GET_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_LOGO_SAGEM   BITMAP                  "res\\LogoSagem.bmp"
+IDB_BITMAP_LGREEN       BITMAP                  "res\\bitmap_g.bmp"
+IDB_BITMAP_LYELLOW      BITMAP                  "res\\bitmap_y.bmp"
+IDB_BITMAP_LRED         BITMAP                  "res\\bitmap_r.bmp"
+IDB_HAND_RIGHT          BITMAP                  "res\\bitmap1.bmp"
+IDB_HAND_LEFT           BITMAP                  "res\\hand_lef.bmp"
+IDB_BITMAP_LOGO_SAGEM_BLUE BITMAP                  "res\\logoMorphoBleu.bmp"
+IDB_BITMAP_LOGO_SAGEM_BLACK BITMAP                  "res\\logoMorphoNoir.bmp"
+IDB_BITMAP_OK           BITMAP                  "res\\ok.bmp"
+IDB_BITMAP_KO           BITMAP                  "res\\ko.bmp"
+IDB_UP_BMP              BITMAP                  "res\\up.bmp"
+IDB_RIGHT_BMP           BITMAP                  "res\\right.bmp"
+IDB_DOWN_BMP            BITMAP                  "res\\down.bmp"
+IDB_LEFT_BMP            BITMAP                  "res\\left.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_SECU MENU
+BEGIN
+    POPUP "Security"
+    BEGIN
+        MENUITEM "Read Mso Configuration",      ID_READ_CONFIGURATION
+        MENUITEM "Load Pkcs12",                 ID_LOAD_PKCS12
+        MENUITEM "Store Certificate",           ID_STORE_CERTIFICAT
+        MENUITEM "Read Certificate",            ID_READ_CERTIFICAT
+        MENUITEM SEPARATOR
+        MENUITEM "Verify Sign X9.84",           ID_VERIF_SIGN_X984
+        MENUITEM "Extract SignerId X984",       ID_EXTRACT_SIGNER_ID
+        MENUITEM SEPARATOR
+        MENUITEM "Load Master Keys (from binary file)", ID_LOAD_MASTER_KEY
+        MENUITEM SEPARATOR
+        MENUITEM "Load Moc Kenc (from binary file)", ID_LOAD_MOC_KENC
+        MENUITEM "Get Moc Kenc KCV",            ID_DISPLAY_MOC_KENC_KCV
+        MENUITEM SEPARATOR
+        MENUITEM "Load Ks in Unsecure Mode",    ID_SECURITY_LOAD_KS
+        MENUITEM "Load Ks in Asymmetric Secure Mode", ID_SECURITY_LOAD_KS_ASYMMSEC
+        MENUITEM "Load Ks in Symmetric Secure Mode", ID_SECURITY_LOAD_KS_SYMMSEC
+        MENUITEM "Get Ks KCV",                  ID_SECURITY_DISPLAY_KS_KCV
+        MENUITEM "Enable Biometric Data Encryption", ID_SECURITY_ENABLE_BIO_DATA_ENCRYPTION
+        MENUITEM "Decrypt Biometric Data",      ID_SECURITY_DECRYPT_BIOMETRIC_DATA
+        MENUITEM SEPARATOR
+        MENUITEM "Encrypt Data - AES128",       ID_SECURITY_ENCRYPT_AES_DATA
+        MENUITEM "Decrypt Data - AES128",       ID_SECURITY_DECRYPT_AES_DATA
+        POPUP "Privacy Mode"
+        BEGIN
+            POPUP "Enable Privacy Mode"
+            BEGIN
+                MENUITEM "No operation on the Database", ID_SECURITY_PRIVACY_MODE_Enable_NoOperationDB
+                MENUITEM "Erase the existing Database", ID_SECURITY_PRIVACY_MODE_Enable_EraseDB
+                MENUITEM "Cipher/Trancipher the unsupported Database", ID_SECURITY_PRIVACY_MODE_Enable_CipherDB
+            END
+            POPUP "Enable Partial Privacy Mode"
+            BEGIN
+                MENUITEM "No operation on the Database", ID_SECURITY_PRIVACY_MODE_PartialEnable_NoOperationDB
+                MENUITEM "Erase the existing Database", ID_SECURITY_PRIVACY_MODE_PartialEnable_EraseDB
+                MENUITEM "Cipher/Trancipher the unsupported Database", ID_SECURITY_PRIVACY_MODE_PartialEnable_CipherDB
+            END
+            POPUP "Disable Privacy Mode"
+            BEGIN
+                MENUITEM "No operation on the Database", ID_SECURITY_PRIVACY_MODE_Disable_NoOperationDB
+                MENUITEM "Erase the existing Database", ID_SECURITY_PRIVACY_MODE_Disable_EraseDB
+                MENUITEM "Cipher/Trancipher the unsupported Database", ID_SECURITY_PRIVACY_MODE_Disable_CipherDB
+            END
+        END
+        MENUITEM "Load Kprivacy in Unsecure Mode", ID_SECURITY_LOAD_KPRIVACY
+        MENUITEM "Load Kprivacy in Symmetric Secure Mode", ID_SECURITY_LOAD_KPRIVACY_SYMMSEC
+        MENUITEM "Get Privacy KCV",             ID_SECURITY_DISPLAY_KPRIVACY_KCV
+    END
+    POPUP "Tools"
+    BEGIN
+        MENUITEM "Uncompress Image",            ID_UNCOMPRESS_IMAGE
+        MENUITEM "Convert to ISO-19794-4 FIR",  ID_CONVERT_ISO19794_FIR
+        POPUP "FVP MMI File"
+        BEGIN
+            MENUITEM "Save as",                     ID_FVP_MMI_FILE_SAVEAS
+            MENUITEM "Load",                        32792
+            MENUITEM "Reset",                       32794
+        END
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PPAGE_CODE DLGINIT
+BEGIN
+    IDC_WORKFLOW_TYPE, 0x403, 1, 0
+"\000" 
+    0
+END
+
+IDD_PPAGE_VERIFY DLGINIT
+BEGIN
+    IDC_OUTPUT_FILE_TYPE, 0x403, 1, 0
+"\000" 
+    IDC_WORKFLOW_TYPE, 0x403, 1, 0
+"\000" 
+    0
+END
+
+IDD_PPAGE_GET_IMAGE DLGINIT
+BEGIN
+    IDC_COMPRESSION_TYPE, 0x403, 4, 0
+0x4152, 0x0057, 
+    IDC_COMPRESSION_TYPE, 0x403, 9, 0
+0x4153, 0x4547, 0x5f4d, 0x3156, "\000" 
+    IDC_COMPRESSION_TYPE, 0x403, 4, 0
+0x5357, 0x0051, 
+    0
+END
+
+IDD_TAB_BIO_SETTINGS DLGINIT
+BEGIN
+    IDC_FFD_SECU_LEVEL, 0x403, 5, 0
+0x6948, 0x6867, "\000" 
+    IDC_FFD_SECU_LEVEL, 0x403, 7, 0
+0x654d, 0x6964, 0x6d75, "\000" 
+    IDC_CODER_CHOICE, 0x403, 8, 0
+0x6544, 0x6166, 0x6c75, 0x0074, 
+    IDC_CODER_CHOICE, 0x403, 9, 0
+0x7453, 0x6e61, 0x6164, 0x6472, "\000" 
+    IDC_CODER_CHOICE, 0x403, 9, 0
+0x754a, 0x6576, 0x696e, 0x656c, "\000" 
+    IDC_CODER_CHOICE, 0x403, 12, 0
+0x6854, 0x6e69, 0x6620, 0x6e69, 0x6567, 0x0072, 
+    IDC_BIO_MODE, 0x403, 8, 0
+0x6544, 0x6166, 0x6c75, 0x0074, 
+    IDC_BIO_MODE, 0x403, 9, 0
+0x6441, 0x6176, 0x636e, 0x6465, "\000" 
+    IDC_STRATEGY_MODE, 0x403, 16, 0
+0x7845, 0x6570, 0x7472, 0x4428, 0x6665, 0x7561, 0x746c, 0x0029, 
+    IDC_STRATEGY_MODE, 0x403, 15, 0
+0x6146, 0x7473, 0x5328, 0x6174, 0x646e, 0x7261, 0x2964, "\000" 
+    IDC_STRATEGY_MODE, 0x403, 15, 0
+0x6c53, 0x776f, 0x4128, 0x6363, 0x7275, 0x7461, 0x2965, "\000" 
+    IDC_STRATEGY_MODE, 0x403, 16, 0
+0x7546, 0x6c6c, 0x4d20, 0x6c75, 0x6974, 0x6f4d, 0x6164, 0x006c, 
+    IDC_STRATEGY_MODE, 0x403, 14, 0
+0x6e41, 0x6974, 0x5320, 0x6f70, 0x666f, 0x6e69, 0x0067, 
+    0
+END
+
+IDD_TAB_OPTIONS DLGINIT
+BEGIN
+    IDC_CONFIG_SENSOR_WIN_POSITION, 0x403, 3, 0
+0xb030, "\000" 
+    IDC_CONFIG_SENSOR_WIN_POSITION, 0x403, 5, 0
+0x3831, 0xb030, "\000" 
+    IDC_CONFIG_SENSOR_WIN_POSITION, 0x403, 25, 0
+0xb030, 0x4e2d, 0x6e6f, 0x4f20, 0x6972, 0x6e65, 0x6574, 0x2064, 0x614d, 
+0x6374, 0x6968, 0x676e, "\000" 
+    IDC_CONFIG_SENSOR_WIN_POSITION, 0x403, 27, 0
+0x3831, 0xb030, 0x4e2d, 0x6e6f, 0x4f20, 0x6972, 0x6e65, 0x6574, 0x2064, 
+0x614d, 0x6374, 0x6968, 0x676e, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&A propos de MSO_Demo..."
+    IDS_SECU_EXPORT_SCORE   "Export score"
+    IDS_TT_PROGRESS_CTRL    "Time remaining for the Add User command to be done"
+    IDS_TT_ASYNC_CMD_MSG    "Help messages for finger positioning"
+    IDS_TT_ASYNC_ENROLL_MSG "Help messages for the enrollment sequencing"
+    IDS_TT_VIEWER           "Finger Image Main Viewer"
+    IDS_TT_VIEWER_CHECKBOX  "Allows seeing images in the main viewer"
+    IDS_TT_MINI_VIEWERCHECKBOX 
+                            "Allows seeing mini-images while enrolling or capturing"
+    IDS_TT_BUTTON_IDENT_MATCH 
+                            "Identify a person in the database thanks to an input Pks file"
+    IDS_TT_BUTTON_VERIF_MATCH "Verify if 2 files of Pks match together"
+    IDS_TT_BUTTON_REMOVE_USER "Remove a user from the database"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TT_BUTTON_REMOVE_ALL 
+                            "Remove the whole list of users from the database"
+    IDS_TT_BUTTON_ADD_USER  "Add a user in base thanks to an input Pks file"
+    IDS_TT_BUTTON_CREATE_BASE "Create a database partition in the MorphoSmart"
+    IDS_TT_BUTTON_DESTROY_BASE 
+                            "Delete the database partition in the MorphoSmart"
+    IDS_TT_BUTTON_START     "Start (or stop) the biometric operation selected above"
+    IDS_TT_BUTTON_CLOSE     "Exit MSO_Demo"
+    IDS_SECU_SIGNED_DOWNLOAD "Download is protected with a signature"
+    IDS_SECU_TUNNELING      "Mode Tunneling"
+    IDS_SECU_OFFERED_SECU   "Mode Offered Security"
+    IDS_SECU_PK_ONLY_SIGNED "MSO accepts only signed templates"
+    IDS_MSO_CONFIGURATION   "Mso Configuration"
+    IDS_TT_INFO_USE_RAW     "Use .raw image extension to enable compression"
+END
+
+STRINGTABLE
+BEGIN
+    ID_READ_CONFIGURATION   "Read Mso Configuration"
+    ID_LOAD_PKCS12          "Load Pkcs12"
+    ID_STORE_CERTIFICAT     "Store Certificate"
+    ID_READ_CERTIFICAT      "Read Certificate"
+    ID_VERIF_SIGN_X984      "Verify Sign X9.84"
+    ID_EXTRACT_SIGNER_ID    "Extract SignerId X984"
+    ID_LOAD_MASTER_KEY      "Load Master Keys (From binary File)"
+END
+
+#endif    // Français (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE 12, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\MSO_Demo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.fra\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

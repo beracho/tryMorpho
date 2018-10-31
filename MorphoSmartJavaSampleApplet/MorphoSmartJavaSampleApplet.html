@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<title>MorphoSmart Java Sample Applet</title>
+	</head>
+
+	<style type="text/css">
+	.box {
+	position:relative;
+	width:810px;
+	height:670px;
+	margin:10px auto 0 auto;
+	}
+
+	.box-gradient {
+		position:absolute;
+		width:100%;
+		height:100%;
+		border-radius:10px;
+		-moz-border-radius:10px;
+		-webkit-border-radius:10px;
+		background: -moz-linear-gradient(left, #CCCCCC 0%, #EEEEEE 50%, #EEEEEE 50%, #CCCCCC 100%);
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,#CCCCCC),color-stop(50%,#EEEEEE), color-stop(50%,#EEEEEE), color-stop(100%,#CCCCCC));
+	}
+
+	.bTHelp {
+		-moz-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+		-webkit-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+		box-shadow:inset 0px 1px 3px 0px #91b8b3;
+		background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #768d87), color-stop(1, #6c7c7c));
+		background:-moz-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+		background:-webkit-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+		background:-o-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+		background:-ms-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+		background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#768d87', endColorstr='#6c7c7c',GradientType=0);
+		background-color:#768d87;
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+		border-radius:5px;
+		border:1px solid #566963;
+		display:inline-block;
+		cursor:pointer;
+		color:#ffffff;
+		font-family:arial;
+		font-size:15px;
+		font-weight:bold;
+		padding:11px 23px;
+		text-decoration:none;
+		text-shadow:0px -1px 0px #2b665e;
+	}
+	.bTHelp:hover {
+		background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6c7c7c), color-stop(1, #768d87));
+		background:-moz-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+		background:-webkit-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+		background:-o-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+		background:-ms-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+		background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6c7c7c', endColorstr='#768d87',GradientType=0);
+		background-color:#6c7c7c;
+	}
+	.bTHelp:active {
+		position:relative;
+		top:1px;
+	}
+
+	</style>
+	<body align="center">
+		<div><a href="#" class="bTHelp" style="cursor:pointer;"
+			onClick="alert('To use this Applet sample,\nwe must set the environment variable MORPHOSMART_SDK to the MorphoSmart SDK Samples installation directory path and add it to the system PATH variable.\nThe default SDK libraries path value is: \n - 32-bits platform : C:\\Morpho\\MorphoSmart SDK\\PC\\Demos\\win32 \n - 64-bits platform: C:\\Morpho\\MorphoSmart SDK\\PC\\Demos\\x64')">Requirement note</a></div>
+		<div class="box">
+			<div class="box-gradient">
+				<applet
+				code="morpho.morphosmart.sdk.applet.demo.MsoDemo.class"
+				archive="MorphoSmartJavaWrapperSampleApplet.jar, msosecu-6.20.1.0.jar, morphosmart-sdk-6.20.1.0.jar"
+				name="MsoDemo"
+				width="800"
+				height="660">
+				Your browser does not support java.
+				</applet>
+			</div>
+		</div>
+	</body>
+</html>
